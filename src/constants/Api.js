@@ -1,0 +1,2 @@
+export const FETCH_ALL_LIST = 'FETCH_ALL_LIST'
+export const FETCH_LOCATION = 'FETCH_LOCATION'
