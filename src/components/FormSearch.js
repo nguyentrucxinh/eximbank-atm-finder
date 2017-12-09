@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Banner extends Component {
+class FormSearch extends Component {
     render() {
         return (
             <div className="row">
@@ -55,4 +55,4 @@ class Banner extends Component {
     }
 }
 
-export default Banner
+export default FormSearch

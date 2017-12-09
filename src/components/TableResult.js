@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Content extends Component {
+class TableResult extends Component {
     render() {
         return (
             <div>
@@ -58,4 +58,4 @@ class Content extends Component {
     }
 }
 
-export default Content
+export default TableResult

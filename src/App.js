@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import Footer from './components/Footer'
 import Nav from './components/Nav'
-import Banner from './components/Banner'
-import Content from './components/Content'
+import FormSearchContainer from './containers/FormSearchContainer'
+import TableResultContainer from './containers/TableResultContainer'
 
 class App extends Component {
   render() {
     return (
       <div>
         <Nav />
-        <Banner />
-        <Content />
+        <FormSearchContainer />
+        <TableResultContainer />
         <Footer />
       </div>
     );
