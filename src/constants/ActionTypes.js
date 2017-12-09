@@ -1,1 +1,2 @@
-export const SEARCH = 'SEARCH'
+export const FETCH_ALL_LIST = 'FETCH_ALL_LIST'
+export const FETCH_LOCATIONS = 'FETCH_LOCATIONS'

@@ -1,9 +1,9 @@
 import initialState from '../initialState'
-import { FETCH_LOCATIONS } from '../constants/ActionTypes'
+import { FETCH_ALL_LIST } from '../constants/ActionTypes'
 
-const filter = (state = initialState, action) => {
+const allList = (state = initialState, action) => {
     switch (action.type) {
-        case FETCH_LOCATIONS:
+        case FETCH_ALL_LIST:
             return [
                 ...state
             ];
@@ -12,4 +12,4 @@ const filter = (state = initialState, action) => {
     }
 }
 
-export default filter
+export default allList
