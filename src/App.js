@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div>
         <Nav />
-        <ResultContainer />
+        <FilterContainer />
         <ResultContainer />
         <Footer />
       </div>
