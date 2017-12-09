@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class FormSearch extends Component {
+class Filter extends Component {
     render() {
         return (
             <div className="row">
@@ -55,4 +55,4 @@ class FormSearch extends Component {
     }
 }
 
-export default FormSearch
+export default Filter

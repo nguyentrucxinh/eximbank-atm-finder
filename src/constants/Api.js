@@ -1,2 +1,2 @@
-export const FETCH_ALL_LIST = 'FETCH_ALL_LIST'
-export const FETCH_LOCATION = 'FETCH_LOCATION'
+export const FETCH_ALL_LIST = 'http://webapi.diadiem.com.vn/API.aspx'
+export const FETCH_LOCATION = 'http://webapi.diadiem.com/callService.aspx'
