@@ -5,14 +5,18 @@ import { fetchAllList } from '../apis/allList'
 
 const receiveAllList = allList => ({
     type: FETCH_ALL_LIST,
-    allList
+    payload: {
+        distWard: allList.DistWard,
+        typeCard: allList.TypeCard,
+        typeCardE: allList.TypeCardE
+    }
 })
 
 export const getAllList = () => dispatch => {
 
-    fetchAllList().then(locations => {
-        console.log(locations)
-        dispatch(receiveAllList(locations))
+    fetchAllList().then(allList => {
+        console.log(allList)
+        dispatch(receiveAllList(allList))
     })
 
     // axios.get(GET_ALL_LIST)

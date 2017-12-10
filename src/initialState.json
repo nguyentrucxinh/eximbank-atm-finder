@@ -1,4 +1,9 @@
 {
+    "allList": {
+        "distWard": [],
+        "typeCard": [],
+        "typeCardE": []
+    },
     "filters": {
         "sID": 1,
         "ctyID": 8,

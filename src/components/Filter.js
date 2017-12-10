@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-const Filter = ({ onSubmit }) => {
+const Filter = ({ distWard, typeCard, typeCardE, onSubmit }) => {
 
     let _sID, _ctyID, _dID, _tID
 
@@ -14,6 +14,9 @@ const Filter = ({ onSubmit }) => {
             dID: _dID.value,
             tID: _tID.value
         })
+        console.log(distWard)
+        console.log(typeCard)
+        console.log(typeCardE)
     }
 
     return (
