@@ -3,9 +3,7 @@ import { connect } from 'react-redux'
 import { getLocations, getAllList } from '../actions/index'
 
 const mapStateToProps = (state, ownProps) => ({
-  distWard: state.allList,
-  typeCard: state.allList.allList.typeCard,
-  typeCardE: state.allList.allList.typeCardE
+  allList: state.allList.allList
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({

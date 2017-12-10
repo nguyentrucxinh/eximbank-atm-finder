@@ -4,10 +4,10 @@ import { FETCH_ALL_LIST } from '../constants/ActionTypes'
 const allList = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_ALL_LIST:
-            return {
+            return [
                 ...state,
-                allList: action.payload
-            };
+                action.payload
+            ];
         default:
             return state;
     }
