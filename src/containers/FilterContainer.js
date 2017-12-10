@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import Filter from '../components/Filter'
 import { connect } from 'react-redux'
 

@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import Result from '../components/Result'
 import { connect } from 'react-redux'
 
