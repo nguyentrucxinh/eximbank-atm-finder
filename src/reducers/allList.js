@@ -5,16 +5,8 @@ const allList = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_ALL_LIST:
             console.log('reducer')
-            console.log({
-                distWard: action.payload.DistWard,
-                typeCard: action.payload.TypeCard,
-                typeCardE: action.payload.TypeCardE
-            })
-            return {
-                distWard: action.payload.DistWard,
-                typeCard: action.payload.TypeCard,
-                typeCardE: action.payload.TypeCardE
-            }
+            console.log(action.payload)
+            return action.payload
         default:
             return state
     }

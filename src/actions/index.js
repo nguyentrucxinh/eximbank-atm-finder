@@ -5,7 +5,11 @@ import { fetchAllList } from '../apis/allList'
 
 const receiveAllList = allList => ({
     type: FETCH_ALL_LIST,
-    payload: allList
+    payload: {
+        distWard: allList.DistWard,
+        typeCard: allList.TypeCard,
+        typeCardE: allList.TypeCardE
+    }
 })
 
 export const getAllList = () => dispatch => {
