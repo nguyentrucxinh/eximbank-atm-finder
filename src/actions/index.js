@@ -11,6 +11,7 @@ const receiveAllList = allList => ({
 export const getAllList = () => dispatch => {
 
     fetchAllList().then(allList => {
+        console.log('action')
         console.log(allList)
         dispatch(receiveAllList(allList))
     })

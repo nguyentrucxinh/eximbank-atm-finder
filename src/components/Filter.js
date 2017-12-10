@@ -14,6 +14,7 @@ const Filter = ({ allList, onSubmit }) => {
             dID: _dID.value,
             tID: _tID.value
         })
+        console.log('component')
         console.log(allList)
     }
 
