@@ -7,11 +7,13 @@ import { Provider } from 'react-redux'
 import reducer from './reducers'
 import thunk from 'redux-thunk'
 import initialState from './initialState'
-import {getAllList} from './actions/index'
+import { getAllList } from './actions/index'
 
 const store = createStore(reducer, initialState, applyMiddleware(thunk))
 
 store.dispatch(getAllList())
+
+window.store = store
 
 render(
     <Provider store={store}>

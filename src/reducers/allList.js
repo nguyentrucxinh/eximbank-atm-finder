@@ -8,7 +8,7 @@ const allList = (state = initialState, action) => {
             console.log(action.payload)
             return action.payload
         default:
-            return state
+            return { ...state }
     }
 }
 
