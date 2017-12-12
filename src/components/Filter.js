@@ -7,7 +7,6 @@ const Filter = ({ allList, onSubmit }) => {
 
     const submit = e => {
         e.preventDefault()
-        console.log(`sID : ${_sID.value}, tID: ${_tID.value}, ctyID: ${_ctyID.value}, dID: ${_dID.value}`)
         onSubmit({
             sID: _sID.value,
             ctyID: _ctyID.value,
@@ -19,8 +18,6 @@ const Filter = ({ allList, onSubmit }) => {
             A: "878506_2479886",
             l: 0
         })
-        console.log('component')
-        console.log(allList)
     }
 
     return (

@@ -17,8 +17,6 @@ const receiveAllList = allList => ({
 export const getAllList = () => dispatch => {
 
     fetchAllList().then(allList => {
-        console.log('action')
-        console.log(allList)
         dispatch(receiveAllList(allList))
     })
 
@@ -26,10 +24,9 @@ export const getAllList = () => dispatch => {
     //     .then(response => response.json())
     //     .then(allList => {
     //         dispatch(receiveAllList(allList))
-    //         console.log(allList)
     //     })
     //     .catch(error => {
-    //         console.log(error)
+    //
     //     })
 }
 
@@ -41,19 +38,15 @@ const receiveLocations = locations => ({
 export const getLocations = (filter) => dispatch => {
 
     fetchLocations(filter).then(locations => {
-        console.log('action')
-        console.log(locations)
         dispatch(receiveLocations(locations))
     })
 
     // axios.get(GET_LOCATIONS)
     //     .then(response => response.json())
     //     .then(locations => {
-    //         debugger;
     //         dispatch(receiveLocations(locations))
-    //         console.log(locations)
     //     })
     //     .catch(error => {
-    //         console.log(error)
+    //
     //     })
 }
