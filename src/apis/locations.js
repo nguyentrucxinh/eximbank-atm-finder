@@ -670,7 +670,7 @@ const fakeDatabase = [
 const delay = (ms) =>
     new Promise(resolve => setTimeout(resolve, ms))
 
-export const fetchLocations = () =>
+export const fetchLocations = (filter) =>
     delay(500).then(() => {
         return fakeDatabase
     })

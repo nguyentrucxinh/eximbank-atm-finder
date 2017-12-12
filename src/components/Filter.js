@@ -12,7 +12,12 @@ const Filter = ({ allList, onSubmit }) => {
             sID: _sID.value,
             ctyID: _ctyID.value,
             dID: _dID.value,
-            tID: _tID.value
+            tID: _tID.value,
+            k: "5549585F52505E5Eexi3",
+            fnc: "EBPack",
+            stpe: 1,
+            A: "878506_2479886",
+            l: 0
         })
         console.log('component')
         console.log(allList)

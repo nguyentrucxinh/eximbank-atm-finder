@@ -38,9 +38,9 @@ const receiveLocations = locations => ({
     payload: locations
 })
 
-export const getLocations = () => dispatch => {
+export const getLocations = (filter) => dispatch => {
 
-    fetchLocations().then(locations => {
+    fetchLocations(filter).then(locations => {
         console.log('action')
         console.log(locations)
         dispatch(receiveLocations(locations))
