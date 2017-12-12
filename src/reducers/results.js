@@ -6,7 +6,7 @@ const results = (state = initialState, action) => {
         case FETCH_LOCATIONS:
             return action.payload
         default:
-            return { ...state }
+            return [...state]
     }
 }
 
