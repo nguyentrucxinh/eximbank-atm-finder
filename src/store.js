@@ -5,10 +5,10 @@ import reducer from './reducers'
 import initialState from './initialState'
 import { getAllList } from './actions/index'
 
-const store = createStore(reducer, initialState, applyMiddleware(thunk), applyMiddleware(logger))
+const store = createStore(reducer, initialState, applyMiddleware(thunk, logger))
 
 store.subscribe(() => {
-    console.log(store.getState())
+    console.log(`%c Store Subscribe: ${store.getState()}`, 'background: #222; color: #bada55')
 })
 
 store.dispatch(getAllList())
