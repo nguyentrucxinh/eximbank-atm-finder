@@ -50,7 +50,7 @@ const Filter = ({ allList, onSubmit }) => {
 
                                     <select ref={(input) => _dID = input}>
                                         {allList.distWard.map((value, index) =>
-                                            <option key={value.WID} value={value.WID}>{value.NameVN}</option>
+                                            <option key={value.DID} value={value.DID}>{value.NameVN}</option>
                                         )}
                                     </select>
                                 </label>
