@@ -27,14 +27,13 @@ const Filter = ({ allList, onSubmit }) => {
 
                             <div className="small-12 columns">
                                 <legend>Tôi đang tìm</legend>
-                                <input ref={(input) =>  _sID = input } type="radio" name="pokemon" value="1" id="pokemonRed" defaultChecked={true} /><label htmlFor="pokemonRed">ATM</label>
-                                <input ref={(input) =>  _sID = input } type="radio" name="pokemon" value="2" id="pokemonBlue" /><label htmlFor="pokemonBlue">Chi nhánh/PGD</label>
-                                <input ref={(input) =>  _sID = input } type="radio" name="pokemon" value="3" id="pokemonYellow" /><label htmlFor="pokemonYellow">Đơn vị chấp nhận thẻ(mPOS)</label>
-                                <select ref={(input) =>  _tID = input }>
-                                    <option value="husker">Husker</option>
-                                    <option value="starbuck">Starbuck</option>
-                                    <option value="hotdog">Hot Dog</option>
-                                    <option value="apollo">Apollo</option>
+                                <input ref={(input) => _sID = input} type="radio" name="pokemon" value="1" id="pokemonRed" defaultChecked={true} /><label htmlFor="pokemonRed">ATM</label>
+                                <input ref={(input) => _sID = input} type="radio" name="pokemon" value="2" id="pokemonBlue" /><label htmlFor="pokemonBlue">Chi nhánh/PGD</label>
+                                <input ref={(input) => _sID = input} type="radio" name="pokemon" value="3" id="pokemonYellow" /><label htmlFor="pokemonYellow">Đơn vị chấp nhận thẻ(mPOS)</label>
+                                <select ref={(input) => _tID = input}>
+                                    {allList.typeCard.map((value, index) =>
+                                        <option key={value.TID} value={value.TID}>{value.TN}</option>
+                                    )}
                                 </select>
                             </div>
 
@@ -43,18 +42,16 @@ const Filter = ({ allList, onSubmit }) => {
                             </div>
                             <div className="small-12 columns">
                                 <label>Theo điểm đặt
-                                    <select ref={(input) =>  _ctyID = input }>
-                                        <option value="husker">Husker</option>
-                                        <option value="starbuck">Starbuck</option>
-                                        <option value="hotdog">Hot Dog</option>
-                                        <option value="apollo">Apollo</option>
+                                    <select ref={(input) => _ctyID = input}>
+                                        {allList.city.map((value, index) =>
+                                            <option key={value.cityID} value={value.cityID}>{value.cityVN}</option>
+                                        )}
                                     </select>
 
-                                    <select ref={(input) =>  _dID = input }>
-                                        <option value="husker">Husker</option>
-                                        <option value="starbuck">Starbuck</option>
-                                        <option value="hotdog">Hot Dog</option>
-                                        <option value="apollo">Apollo</option>
+                                    <select ref={(input) => _dID = input}>
+                                        {allList.distWard.map((value, index) =>
+                                            <option key={value.WID} value={value.WID}>{value.NameVN}</option>
+                                        )}
                                     </select>
                                 </label>
                             </div>

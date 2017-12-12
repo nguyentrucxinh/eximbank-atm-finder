@@ -8,7 +8,7 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onSubmit: () => {
-    dispatch(getAllList())
+    dispatch(getLocations())
   }
 })
 

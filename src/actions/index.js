@@ -7,6 +7,7 @@ import { fetchLocations } from '../apis/locations'
 const receiveAllList = allList => ({
     type: FETCH_ALL_LIST,
     payload: {
+        city: allList.City,
         distWard: allList.DistWard,
         typeCard: allList.TypeCard,
         typeCardE: allList.TypeCardE

@@ -2768,6 +2768,380 @@ const fakeDatabase = {
             "TNEng": "Womens Accessory and Specialty Shops",
             "TN": "Cửa hàng bán phụ kiện dành cho nữ"
         }
+    ],
+    City: [
+        {
+            "cityID": "76",
+            "cityEN": "An Giang",
+            "cityVN": "An Giang",
+            "state": "AnGiang"
+        },
+        {
+            "cityID": "64",
+            "cityEN": "Ba Ria - Vung Tau",
+            "cityVN": "Bà Rịa Vũng Tàu",
+            "state": "VungTau"
+        },
+        {
+            "cityID": "204",
+            "cityEN": "Bac Giang",
+            "cityVN": "Bắc Giang",
+            "state": "BacGiang"
+        },
+        {
+            "cityID": "281",
+            "cityEN": "Bac Kan",
+            "cityVN": "Bắc Kạn",
+            "state": "BacKan"
+        },
+        {
+            "cityID": "781",
+            "cityEN": "Bac Lieu",
+            "cityVN": "Bạc Liêu",
+            "state": "BacLieu"
+        },
+        {
+            "cityID": "241",
+            "cityEN": "Bac Ninh",
+            "cityVN": "Bắc Ninh",
+            "state": "BacKan"
+        },
+        {
+            "cityID": "75",
+            "cityEN": "Ben Tre",
+            "cityVN": "Bến Tre",
+            "state": "BenTre"
+        },
+        {
+            "cityID": "56",
+            "cityEN": "Binh Dinh",
+            "cityVN": "Bình Định",
+            "state": "BinhDinh"
+        },
+        {
+            "cityID": "650",
+            "cityEN": "Binh Duong",
+            "cityVN": "Bình Dương",
+            "state": "BinhDuong"
+        },
+        {
+            "cityID": "651",
+            "cityEN": "Binh Phuoc",
+            "cityVN": "Bình Phước",
+            "state": "BinhPhuoc"
+        },
+        {
+            "cityID": "62",
+            "cityEN": "Binh Thuan",
+            "cityVN": "Bình Thuận",
+            "state": "PhanThiet"
+        },
+        {
+            "cityID": "780",
+            "cityEN": "Ca Mau",
+            "cityVN": "Cà Mau",
+            "state": "CaMau"
+        },
+        {
+            "cityID": "710",
+            "cityEN": "Can Tho",
+            "cityVN": "Cần Thơ",
+            "state": "CanTho"
+        },
+        {
+            "cityID": "26",
+            "cityEN": "Cao Bang",
+            "cityVN": "Cao Bằng",
+            "state": "CaoBang"
+        },
+        {
+            "cityID": "511",
+            "cityEN": "Da Nang",
+            "cityVN": "Đà Nẵng",
+            "state": "DaNang"
+        },
+        {
+            "cityID": "501",
+            "cityEN": "Dac Nong",
+            "cityVN": "Đắc Nông",
+            "state": "DacNong"
+        },
+        {
+            "cityID": "500",
+            "cityEN": "Dak  Lak",
+            "cityVN": "Đắk  Lắk",
+            "state": "BanMeThuot"
+        },
+        {
+            "cityID": "230",
+            "cityEN": "Dien Bien",
+            "cityVN": "Điện Biên",
+            "state": "DienBien"
+        },
+        {
+            "cityID": "61",
+            "cityEN": "Dong Nai",
+            "cityVN": "Đồng Nai",
+            "state": "DongNai"
+        },
+        {
+            "cityID": "67",
+            "cityEN": "Dong Thap",
+            "cityVN": "Đồng Tháp",
+            "state": "DongThap"
+        },
+        {
+            "cityID": "59",
+            "cityEN": "Gia Lai",
+            "cityVN": "Gia Lai",
+            "state": "GiaLai"
+        },
+        {
+            "cityID": "223",
+            "cityEN": "Ha Giang",
+            "cityVN": "Hà Giang",
+            "state": "HaGiang"
+        },
+        {
+            "cityID": "351",
+            "cityEN": "Ha Nam",
+            "cityVN": "Hà Nam",
+            "state": "HaNam"
+        },
+        {
+            "cityID": "4",
+            "cityEN": "Ha Noi",
+            "cityVN": "Hà Nội",
+            "state": "HaNoi"
+        },
+        {
+            "cityID": "39",
+            "cityEN": "Ha Tinh",
+            "cityVN": "Hà Tĩnh",
+            "state": "HaTinh"
+        },
+        {
+            "cityID": "320",
+            "cityEN": "Hai Duong",
+            "cityVN": "Hải Dương",
+            "state": "HaiDuong"
+        },
+        {
+            "cityID": "31",
+            "cityEN": "Hai Phong",
+            "cityVN": "Hải Phòng",
+            "state": "HaiPhong"
+        },
+        {
+            "cityID": "711",
+            "cityEN": "Hau Giang",
+            "cityVN": "Hậu Giang",
+            "state": "HauGiang"
+        },
+        {
+            "cityID": "8",
+            "cityEN": "Ho Chi Minh",
+            "cityVN": "Hồ Chí Minh",
+            "state": "SaiGon"
+        },
+        {
+            "cityID": "18",
+            "cityEN": "Hoa Binh",
+            "cityVN": "Hòa Bình",
+            "state": "HoaBinh"
+        },
+        {
+            "cityID": "321",
+            "cityEN": "Hung Yen",
+            "cityVN": "Hưng Yên",
+            "state": "HungYen"
+        },
+        {
+            "cityID": "58",
+            "cityEN": "Khanh Hoa",
+            "cityVN": "Khánh Hòa",
+            "state": "NhaTrang"
+        },
+        {
+            "cityID": "77",
+            "cityEN": "Kien Giang",
+            "cityVN": "Kiên Giang",
+            "state": "RachGia"
+        },
+        {
+            "cityID": "60",
+            "cityEN": "Kon Tum",
+            "cityVN": "Kon Tum",
+            "state": "KonTum"
+        },
+        {
+            "cityID": "23",
+            "cityEN": "Lai Chau",
+            "cityVN": "Lai Châu",
+            "state": "LaiChau"
+        },
+        {
+            "cityID": "63",
+            "cityEN": "Lam Dong",
+            "cityVN": "Lâm Đồng",
+            "state": "LamDong"
+        },
+        {
+            "cityID": "25",
+            "cityEN": "Lang Son",
+            "cityVN": "Lạng Sơn",
+            "state": "LangSon"
+        },
+        {
+            "cityID": "20",
+            "cityEN": "Lao Cai",
+            "cityVN": "Lào Cai",
+            "state": "LaoCai"
+        },
+        {
+            "cityID": "72",
+            "cityEN": "Long An",
+            "cityVN": "Long An",
+            "state": "LongAn"
+        },
+        {
+            "cityID": "350",
+            "cityEN": "Nam Dinh",
+            "cityVN": "Nam Định",
+            "state": "NamDinh"
+        },
+        {
+            "cityID": "38",
+            "cityEN": "Nghe An",
+            "cityVN": "Nghệ An",
+            "state": "NgheAn"
+        },
+        {
+            "cityID": "30",
+            "cityEN": "Ninh Binh",
+            "cityVN": "Ninh Bình",
+            "state": "NinhBinh"
+        },
+        {
+            "cityID": "68",
+            "cityEN": "Ninh Thuan",
+            "cityVN": "Ninh Thuận",
+            "state": "PhanRang"
+        },
+        {
+            "cityID": "210",
+            "cityEN": "Phu Tho",
+            "cityVN": "Phú Thọ",
+            "state": "PhuTho"
+        },
+        {
+            "cityID": "57",
+            "cityEN": "Phu Yen",
+            "cityVN": "Phú Yên",
+            "state": "PhuYen"
+        },
+        {
+            "cityID": "52",
+            "cityEN": "Quang Binh",
+            "cityVN": "Quảng Bình",
+            "state": "DongHoi"
+        },
+        {
+            "cityID": "510",
+            "cityEN": "Quang Nam",
+            "cityVN": "Quảng Nam",
+            "state": "QuangNam"
+        },
+        {
+            "cityID": "55",
+            "cityEN": "Quang Ngai",
+            "cityVN": "Quảng Ngãi",
+            "state": "QuangNgai"
+        },
+        {
+            "cityID": "33",
+            "cityEN": "Quang Ninh",
+            "cityVN": "Quảng Ninh",
+            "state": "QuangNinh"
+        },
+        {
+            "cityID": "53",
+            "cityEN": "Quang Tri",
+            "cityVN": "Quảng Trị",
+            "state": "QuangTri"
+        },
+        {
+            "cityID": "79",
+            "cityEN": "Soc Trang",
+            "cityVN": "Sóc Trang",
+            "state": "SocTrang"
+        },
+        {
+            "cityID": "66",
+            "cityEN": "Tay Ninh",
+            "cityVN": "Tây Ninh",
+            "state": "TayNinh"
+        },
+        {
+            "cityID": "36",
+            "cityEN": "Thai Binh",
+            "cityVN": "Thái Bình",
+            "state": "ThaiBinh"
+        },
+        {
+            "cityID": "280",
+            "cityEN": "Thai Nguyen",
+            "cityVN": "Thái Nguyên",
+            "state": "ThaiNguyen"
+        },
+        {
+            "cityID": "37",
+            "cityEN": "Thanh Hoa",
+            "cityVN": "Thanh Hóa",
+            "state": "ThanhHoa"
+        },
+        {
+            "cityID": "54",
+            "cityEN": "Thua Thien Hue",
+            "cityVN": "Thừa Thiên Huế",
+            "state": "Hue"
+        },
+        {
+            "cityID": "73",
+            "cityEN": "Tien Giang",
+            "cityVN": "Tiền Giang",
+            "state": "TienGiang"
+        },
+        {
+            "cityID": "74",
+            "cityEN": "Tra Vinh",
+            "cityVN": "Trà Vinh",
+            "state": "TraVinh"
+        },
+        {
+            "cityID": "27",
+            "cityEN": "Tuyen Quang",
+            "cityVN": "Tuyên Quang",
+            "state": "TuyenQuang"
+        },
+        {
+            "cityID": "70",
+            "cityEN": "Vinh Long",
+            "cityVN": "Vĩnh Long",
+            "state": "VinhLong"
+        },
+        {
+            "cityID": "211",
+            "cityEN": "Vinh Phuc",
+            "cityVN": "Vĩnh Phúc",
+            "state": "VinhPhuc"
+        },
+        {
+            "cityID": "29",
+            "cityEN": "Yen Bai",
+            "cityVN": "Yên Bái",
+            "state": "YenBai"
+        }
     ]
 }
 
