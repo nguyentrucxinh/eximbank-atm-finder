@@ -44,13 +44,13 @@ const Filter = ({ allList, onSubmit }) => {
                             </div>
                             <div className="small-12 columns">
                                 <label>Theo điểm đặt
-                                    <select ref={(input) => _ctyID = input}>
+                                    <select defaultValue={8} ref={(input) => _ctyID = input}>
                                         {allList.city.map((value, index) =>
                                             <option key={value.cityID} value={value.cityID}>{value.cityVN}</option>
                                         )}
                                     </select>
 
-                                    <select ref={(input) => _dID = input}>
+                                    <select defaultValue={18} ref={(input) => _dID = input}>
                                         {allList.distWard.map((value, index) =>
                                             <option key={value.DID} value={value.DID}>{value.NameVN}</option>
                                         )}
