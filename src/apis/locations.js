@@ -672,5 +672,11 @@ const delay = (ms) =>
 
 export const fetchLocations = (filter) =>
     delay(500).then(() => {
-        return fakeDatabase
+        console.log('Filter params')
+        console.log(filter)
+        return fakeDatabase.filter(n => 
+            n.cID == filter.ctyID 
+            && n.dID == filter.dID
+            && n.tID == filter.tID
+        )
     })
