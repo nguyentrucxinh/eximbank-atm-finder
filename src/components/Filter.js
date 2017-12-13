@@ -1,6 +1,21 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+let inputs = [
+    {
+        id: 1,
+        name: 'ATM'
+    },
+    {
+        id: 2,
+        name: 'Chi nhánh/PGD'
+    },
+    {
+        id: 3,
+        name: 'Đơn vị chấp nhận thẻ(mPOS)'
+    }
+]
+
 class Filter extends Component {
 
     constructor(props) {
@@ -54,9 +69,14 @@ class Filter extends Component {
 
                                 <div className="small-12 columns">
                                     <legend>Tôi đang tìm</legend>
-                                    <input value={this.state.sID} onChange={this.handleChangeSID} type="radio" name="pokemon" value="1" id="pokemonRed" defaultChecked={true} /><label htmlFor="pokemonRed">ATM</label>
-                                    <input value={this.state.sID} onChange={this.handleChangeSID} type="radio" name="pokemon" value="2" id="pokemonBlue" /><label htmlFor="pokemonBlue">Chi nhánh/PGD</label>
-                                    <input value={this.state.sID} onChange={this.handleChangeSID} type="radio" name="pokemon" value="3" id="pokemonYellow" /><label htmlFor="pokemonYellow">Đơn vị chấp nhận thẻ(mPOS)</label>
+
+                                    {inputs.map((value, index) =>
+                                        <div key={value.id}>
+                                            <input value={value.id} onChange={this.handleChangeSID} type="radio" name="pokemon" defaultChecked={value.id === 1} />
+                                            <label>{value.name}</label>
+                                        </div>
+                                    )}
+
                                     <select value={this.state.tID} onChange={this.handleChangeTID} disabled={this.state.sID != 3}>
                                         <option value="0">Please select</option>
                                         {this.props.allList.typeCard.map((value, index) =>

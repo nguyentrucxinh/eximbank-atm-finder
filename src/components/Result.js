@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 const Result = ({ results }) => {
@@ -9,7 +9,7 @@ const Result = ({ results }) => {
                 Ho Chi Minh
         </div>
             <div className="row column">
-                <p className="lead">Kết Quả: 1-6 của 6</p>
+                <p className="lead">Kết Quả: 0-{results.length} của {results.length}</p>
             </div>
 
             <div className="row column">
