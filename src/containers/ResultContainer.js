@@ -2,7 +2,7 @@ import Result from '../components/Result'
 import { connect } from 'react-redux'
 
 const mapStateToProps = (state, ownProps) => ({
-  
+  results: state.results
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
