@@ -1,28 +1,47 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-let _sID, _ctyID, _dID, _tID
-
 class Filter extends Component {
 
     constructor(props) {
         super(props)
-        this.handleSubmit = this.handleSubmit.bind(this)
-    }
-
-    handleSubmit(e) {
-        e.preventDefault()
-        this.props.onSubmit({
-            sID: _sID.value,
-            ctyID: _ctyID.value,
-            dID: _dID.value,
-            tID: _tID.value,
+        this.state = {
+            sID: 1,
+            ctyID: 8,
+            dID: 18,
+            tID: 0,
             k: "5549585F52505E5Eexi3",
             fnc: "EBPack",
             stpe: 1,
             A: "878506_2479886",
             l: 0
-        })
+        }
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChangeSID = this.handleChangeSID.bind(this)
+        this.handleChangeTID = this.handleChangeTID.bind(this)
+        this.handleChangeCtyID = this.handleChangeCtyID.bind(this)
+        this.handleChangeDID = this.handleChangeDID.bind(this)
+    }
+
+    handleSubmit(e) {
+        e.preventDefault()
+        this.props.onSubmit(this.state)
+    }
+
+    handleChangeSID(event) {
+        this.setState({ sID: event.target.value })
+    }
+
+    handleChangeTID(event) {
+        this.setState({ tID: event.target.value })
+    }
+
+    handleChangeCtyID(event) {
+        this.setState({ ctyID: event.target.value })
+    }
+
+    handleChangeDID(event) {
+        this.setState({ dID: event.target.value })
     }
 
     render() {
@@ -35,10 +54,10 @@ class Filter extends Component {
 
                                 <div className="small-12 columns">
                                     <legend>Tôi đang tìm</legend>
-                                    <input ref={(input) => _sID = input} type="radio" name="pokemon" value="1" id="pokemonRed" defaultChecked={true} /><label htmlFor="pokemonRed">ATM</label>
-                                    <input ref={(input) => _sID = input} type="radio" name="pokemon" value="2" id="pokemonBlue" /><label htmlFor="pokemonBlue">Chi nhánh/PGD</label>
-                                    <input ref={(input) => _sID = input} type="radio" name="pokemon" value="3" id="pokemonYellow" /><label htmlFor="pokemonYellow">Đơn vị chấp nhận thẻ(mPOS)</label>
-                                    <select ref={(input) => _tID = input}>
+                                    <input value={this.state.sID} onChange={this.handleChangeSID} type="radio" name="pokemon" value="1" id="pokemonRed" defaultChecked={true} /><label htmlFor="pokemonRed">ATM</label>
+                                    <input value={this.state.sID} onChange={this.handleChangeSID} type="radio" name="pokemon" value="2" id="pokemonBlue" /><label htmlFor="pokemonBlue">Chi nhánh/PGD</label>
+                                    <input value={this.state.sID} onChange={this.handleChangeSID} type="radio" name="pokemon" value="3" id="pokemonYellow" /><label htmlFor="pokemonYellow">Đơn vị chấp nhận thẻ(mPOS)</label>
+                                    <select disabled={this.state.sID != 3 ? true : false} value={this.state.tID} onChange={this.handleChangeTID}>
                                         {this.props.allList.typeCard.map((value, index) =>
                                             <option key={value.TID} value={value.TID}>{value.TN}</option>
                                         )}
@@ -50,13 +69,13 @@ class Filter extends Component {
                                 </div>
                                 <div className="small-12 columns">
                                     <label>Theo điểm đặt
-                                        <select defaultValue={8} ref={(input) => _ctyID = input}>
+                                        <select value={this.state.ctyID} onChange={this.handleChangeCtyID}>
                                             {this.props.allList.city.map((value, index) =>
-                                                <option key={value.cityID} value={value.cityID}>{value.cityVN}</option>
+                                                <option key={value.cityID} value={value.cityID} disabled={value.cityID != 8 ? true : false}>{value.cityVN}</option>
                                             )}
                                         </select>
 
-                                        <select defaultValue={18} ref={(input) => _dID = input}>
+                                        <select value={this.state.DID} onChange={this.handleChangeDID}>
                                             {this.props.allList.distWard.map((value, index) =>
                                                 <option key={value.DID} value={value.DID}>{value.NameVN}</option>
                                             )}
