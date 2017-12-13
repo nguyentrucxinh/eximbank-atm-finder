@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-const Filter = ({ allList, onSubmit }) => {
+let _sID, _ctyID, _dID, _tID
 
-    let _sID, _ctyID, _dID, _tID
+class Filter extends Component {
 
-    const submit = e => {
+    constructor(props) {
+        super(props)
+        this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+    handleSubmit(e) {
         e.preventDefault()
-        onSubmit({
+        this.props.onSubmit({
             sID: _sID.value,
             ctyID: _ctyID.value,
             dID: _dID.value,
@@ -20,57 +25,64 @@ const Filter = ({ allList, onSubmit }) => {
         })
     }
 
-    return (
-        <div className="row">
-            <div className="medium-12 large-12 columns">
-                <div className="callout secondary">
-                    <form onSubmit={submit}>
-                        <div className="row">
+    render() {
+        return (
+            <div className="row">
+                <div className="medium-12 large-12 columns">
+                    <div className="callout secondary">
+                        <form onSubmit={this.handleSubmit}>
+                            <div className="row">
 
-                            <div className="small-12 columns">
-                                <legend>Tôi đang tìm</legend>
-                                <input ref={(input) => _sID = input} type="radio" name="pokemon" value="1" id="pokemonRed" defaultChecked={true} /><label htmlFor="pokemonRed">ATM</label>
-                                <input ref={(input) => _sID = input} type="radio" name="pokemon" value="2" id="pokemonBlue" /><label htmlFor="pokemonBlue">Chi nhánh/PGD</label>
-                                <input ref={(input) => _sID = input} type="radio" name="pokemon" value="3" id="pokemonYellow" /><label htmlFor="pokemonYellow">Đơn vị chấp nhận thẻ(mPOS)</label>
-                                <select ref={(input) => _tID = input}>
-                                    {allList.typeCard.map((value, index) =>
-                                        <option key={value.TID} value={value.TID}>{value.TN}</option>
-                                    )}
-                                </select>
-                            </div>
-
-                            <div className="small-12 columns">
-
-                            </div>
-                            <div className="small-12 columns">
-                                <label>Theo điểm đặt
-                                    <select defaultValue={8} ref={(input) => _ctyID = input}>
-                                        {allList.city.map((value, index) =>
-                                            <option key={value.cityID} value={value.cityID}>{value.cityVN}</option>
+                                <div className="small-12 columns">
+                                    <legend>Tôi đang tìm</legend>
+                                    <input ref={(input) => _sID = input} type="radio" name="pokemon" value="1" id="pokemonRed" defaultChecked={true} /><label htmlFor="pokemonRed">ATM</label>
+                                    <input ref={(input) => _sID = input} type="radio" name="pokemon" value="2" id="pokemonBlue" /><label htmlFor="pokemonBlue">Chi nhánh/PGD</label>
+                                    <input ref={(input) => _sID = input} type="radio" name="pokemon" value="3" id="pokemonYellow" /><label htmlFor="pokemonYellow">Đơn vị chấp nhận thẻ(mPOS)</label>
+                                    <select ref={(input) => _tID = input}>
+                                        {this.props.allList.typeCard.map((value, index) =>
+                                            <option key={value.TID} value={value.TID}>{value.TN}</option>
                                         )}
                                     </select>
+                                </div>
 
-                                    <select defaultValue={18} ref={(input) => _dID = input}>
-                                        {allList.distWard.map((value, index) =>
-                                            <option key={value.DID} value={value.DID}>{value.NameVN}</option>
-                                        )}
-                                    </select>
-                                </label>
-                            </div>
+                                <div className="small-12 columns">
 
-                            <div className="small-12 columns">
-                                <button type="submit" className="button">Search Now!</button>
+                                </div>
+                                <div className="small-12 columns">
+                                    <label>Theo điểm đặt
+                                        <select defaultValue={8} ref={(input) => _ctyID = input}>
+                                            {this.props.allList.city.map((value, index) =>
+                                                <option key={value.cityID} value={value.cityID}>{value.cityVN}</option>
+                                            )}
+                                        </select>
+
+                                        <select defaultValue={18} ref={(input) => _dID = input}>
+                                            {this.props.allList.distWard.map((value, index) =>
+                                                <option key={value.DID} value={value.DID}>{value.NameVN}</option>
+                                            )}
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <div className="small-12 columns">
+                                    <button type="submit" className="button">Search Now!</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 Filter.propTypes = {
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired,
+    allList: PropTypes.shape({
+        city: PropTypes.array.isRequired,
+        distWard: PropTypes.array.isRequired,
+        typeCard: PropTypes.array.isRequired
+    }).isRequired
 }
 
 export default Filter
