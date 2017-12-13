@@ -1,6 +1,5 @@
 // import axios from 'axios'
 import { FETCH_ALL_LIST, FETCH_LOCATIONS } from '../constants/ActionTypes'
-import { GET_ALL_LIST, GET_LOCATIONS } from '../constants/Api'
 import { fetchAllList } from '../apis/allList'
 import { fetchLocations } from '../apis/locations'
 
