@@ -68,7 +68,7 @@ class Filter extends Component {
                             <div className="row">
 
                                 <div className="small-12 columns">
-                                    <legend>Tôi đang tìm</legend>
+                                    <legend>I'm finding...</legend>
 
                                     {inputs.map((value, index) =>
                                         <div key={value.id}>
@@ -89,7 +89,7 @@ class Filter extends Component {
 
                                 </div>
                                 <div className="small-12 columns">
-                                    <label>Theo điểm đặt
+                                    <label>By location
                                         <select value={this.state.ctyID} onChange={this.handleChangeCtyID}>
                                             {this.props.allList.city.map((value, index) =>
                                                 <option key={value.cityID} value={value.cityID} disabled={value.cityID != 8}>{value.cityVN}</option>
