@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { Link, Route } from 'react-router-dom'
+import Home from './Home'
+import About from './About'
 
 class Nav extends Component {
     render() {
@@ -13,13 +16,13 @@ class Nav extends Component {
                         <ul className="menu" data-responsive-menu="accordion">
                             <li className="menu-text">Interplanetary</li>
                             <li>
-                                <a href="#">One</a>
+                                <Link to="/home">Home</Link>
                             </li>
                             <li>
-                                <a href="#">Two</a>
+                                <Link to="/about">About</Link>
                             </li>
                             <li>
-                                <a href="#">Three</a>
+                                <Link to="/">Three</Link>
                             </li>
                         </ul>
                     </div>
@@ -35,6 +38,8 @@ class Nav extends Component {
                     </div>
                 </div>
                 <br />
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/about" component={About} />
             </div>
         );
     }
