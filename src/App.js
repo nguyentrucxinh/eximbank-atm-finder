@@ -4,6 +4,9 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import About from './components/About'
+import 'foundation-sites/dist/css/foundation.min.css'
+import 'foundation-icons/foundation-icons.css'
+import 'foundation-sites/dist/js/foundation.min.js'
 
 class App extends Component {
   render() {
