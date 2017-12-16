@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Link, Route } from 'react-router-dom'
-import About from './About'
+import { Link } from 'react-router-dom'
 
 class Nav extends Component {
     render() {
@@ -34,7 +33,6 @@ class Nav extends Component {
                     </div>
                 </div>
                 <br />
-                <Route exact path="/about" component={About} />
             </div>
         );
     }
