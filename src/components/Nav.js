@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
-import Home from './Home'
 import About from './About'
 
 class Nav extends Component {
@@ -16,13 +15,10 @@ class Nav extends Component {
                         <ul className="menu" data-responsive-menu="accordion">
                             <li className="menu-text">Interplanetary</li>
                             <li>
-                                <Link to="/home">Home</Link>
+                                <Link to="/">Home</Link>
                             </li>
                             <li>
                                 <Link to="/about">About</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Three</Link>
                             </li>
                         </ul>
                     </div>
@@ -38,7 +34,6 @@ class Nav extends Component {
                     </div>
                 </div>
                 <br />
-                <Route exact path="/home" component={Home} />
                 <Route exact path="/about" component={About} />
             </div>
         );
