@@ -1,9 +1,9 @@
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import logger from 'redux-logger'
-import reducer from './reducers'
+import reducer from './reducers/rootReducer'
 import initialState from './initialState'
-import { getAllList } from './actions/index'
+import { getAllList } from './actions/homeAction'
 
 const store = createStore(reducer, initialState, applyMiddleware(thunk, logger))
 

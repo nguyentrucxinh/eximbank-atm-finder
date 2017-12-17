@@ -1,6 +1,6 @@
 import Filter from '../components/Filter'
 import { connect } from 'react-redux'
-import { getLocations } from '../actions/index'
+import { getLocations } from '../actions/homeAction'
 
 const mapStateToProps = (state, ownProps) => ({
   allList: state.allList
