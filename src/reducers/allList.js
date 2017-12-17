@@ -1,5 +1,5 @@
 import initialState from '../initialState'
-import { FETCH_ALL_LIST } from '../constants/ActionTypes'
+import { FETCH_ALL_LIST } from '../constants/actionTypes'
 
 const allList = (state = initialState, action) => {
     switch (action.type) {

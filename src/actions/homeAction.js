@@ -1,7 +1,7 @@
 // import axios from 'axios'
-import { FETCH_ALL_LIST, FETCH_LOCATIONS } from '../constants/ActionTypes'
-import { fetchAllList } from '../apis/allList'
-import { fetchLocations } from '../apis/locations'
+import { FETCH_ALL_LIST, FETCH_LOCATIONS } from '../constants/actionTypes'
+import { fetchAllList } from '../apis/allListApi'
+import { fetchLocations } from '../apis/locationsApi'
 
 const receiveAllList = allList => ({
     type: FETCH_ALL_LIST,

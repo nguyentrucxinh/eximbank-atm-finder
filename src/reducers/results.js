@@ -1,5 +1,5 @@
 import initialState from '../initialState'
-import { FETCH_LOCATIONS } from '../constants/ActionTypes'
+import { FETCH_LOCATIONS } from '../constants/actionTypes'
 
 const results = (state = initialState, action) => {
     switch (action.type) {
