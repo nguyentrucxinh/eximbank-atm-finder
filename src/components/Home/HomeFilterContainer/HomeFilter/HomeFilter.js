@@ -16,7 +16,7 @@ let inputs = [
     }
 ]
 
-class Filter extends Component {
+class HomeFilter extends Component {
 
     constructor(props) {
         super(props)
@@ -116,7 +116,7 @@ class Filter extends Component {
     }
 }
 
-Filter.propTypes = {
+HomeFilter.propTypes = {
     onSubmit: PropTypes.func.isRequired,
     allList: PropTypes.shape({
         city: PropTypes.array.isRequired,
@@ -125,4 +125,4 @@ Filter.propTypes = {
     }).isRequired
 }
 
-export default Filter
+export default HomeFilter

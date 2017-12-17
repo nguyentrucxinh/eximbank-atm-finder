@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Result = ({ results }) => {
+const HomeResult = ({ results }) => {
     return (
         <div>
             <div className="row column">
@@ -45,8 +45,8 @@ const Result = ({ results }) => {
     )
 }
 
-Result.propTypes = {
+HomeResult.propTypes = {
     results: PropTypes.array.isRequired
 }
 
-export default Result
+export default HomeResult
