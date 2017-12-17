@@ -4,7 +4,6 @@ import Footer from '../Footer/Footer'
 import Nav from '../Nav/Nav'
 import Home from '../Home/Home'
 import About from '../About/About'
-import 'foundation-sites/dist/css/foundation.min.css'
 import 'foundation-icons/foundation-icons.css'
 import 'foundation-sites/dist/js/foundation.min.js'
 
