@@ -8,15 +8,15 @@ import 'foundation-icons/foundation-icons.css'
 import 'foundation-sites/dist/js/foundation.min.js'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div>
         <Nav />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
         <Footer />
       </div>
-    );
+    )
   }
 }
 

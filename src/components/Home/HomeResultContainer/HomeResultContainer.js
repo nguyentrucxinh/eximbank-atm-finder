@@ -2,7 +2,7 @@ import HomeResult from './HomeResult/HomeResult'
 import { connect } from 'react-redux'
 
 const mapStateToProps = (state, ownProps) => ({
-    results: state.results
+  results: state.results
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
@@ -10,8 +10,8 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 })
 
 const HomeResultContainer = connect(
-    mapStateToProps,
-    mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(HomeResult)
 
 export default HomeResultContainer

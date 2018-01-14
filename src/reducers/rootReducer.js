@@ -3,8 +3,8 @@ import allList from './allList'
 import results from './results'
 
 const rootReducer = combineReducers({
-    allList,
-    results
+  allList,
+  results
 })
 
 export default rootReducer

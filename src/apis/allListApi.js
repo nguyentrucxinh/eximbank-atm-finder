@@ -4,16 +4,16 @@ import typeCard from '../data/TypeCard'
 import typeCardE from '../data/TypeCardE'
 
 const fakeDatabase = {
-    City: city,
-    DistWard: distWard,
-    TypeCard: typeCard,
-    TypeCardE: typeCardE
+  City: city,
+  DistWard: distWard,
+  TypeCard: typeCard,
+  TypeCardE: typeCardE
 }
 
 const delay = (ms) =>
-    new Promise(resolve => setTimeout(resolve, ms))
+  new Promise(resolve => setTimeout(resolve, ms))
 
 export const fetchAllList = () =>
-    delay(500).then(() => {
-        return fakeDatabase
-    })
+  delay(500).then(() => {
+    return fakeDatabase
+  })
