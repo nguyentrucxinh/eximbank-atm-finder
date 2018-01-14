@@ -76,7 +76,7 @@ class HomeFilter extends Component {
                     </div>
                   )}
 
-                  <select value={this.state.tID} onChange={this.handleChangeTID} disabled={this.state.sID != 3}>
+                  <select value={this.state.tID} onChange={this.handleChangeTID} disabled={Number(this.state.sID) !== 3}>
                     <option value='0'>Please select</option>
                     {this.props.allList.typeCard.map((value, index) =>
                       <option key={value.TID} value={value.TID}>{value.TN}</option>
@@ -84,14 +84,13 @@ class HomeFilter extends Component {
                   </select>
                 </div>
 
-                <div className='small-12 columns'>
+                <div className='small-12 columns' />
 
-                </div>
                 <div className='small-12 columns'>
                   <label>By location
-                                        <select value={this.state.ctyID} onChange={this.handleChangeCtyID}>
+                    <select value={this.state.ctyID} onChange={this.handleChangeCtyID}>
                       {this.props.allList.city.map((value, index) =>
-                        <option key={value.cityID} value={value.cityID} disabled={value.cityID != 8}>{value.cityVN}</option>
+                        <option key={value.cityID} value={value.cityID} disabled={Number(value.cityID) !== 8}>{value.cityVN}</option>
                       )}
                     </select>
 

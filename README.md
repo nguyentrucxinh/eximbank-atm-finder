@@ -3,6 +3,7 @@
 - React
 - Redux
 - Foundation (Responsive front-end framework)
+- [JavaScript Standard Style Guide](https://standardjs.com/)
 
 ---
 # HOW TO RUN

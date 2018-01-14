@@ -10,8 +10,8 @@ export const fetchLocations = (filter) =>
     console.log('Filter params')
     console.log(filter)
     return fakeDatabase.filter(n =>
-      n.cID == filter.ctyID
-      && n.dID == filter.dID
-      && n.tID == filter.tID
+      Number(n.cID) === Number(filter.ctyID) &&
+      Number(n.dID) === Number(filter.dID) &&
+      Number(n.tID) === Number(filter.tID)
     )
   })
