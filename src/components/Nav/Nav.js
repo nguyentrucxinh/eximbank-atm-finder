@@ -34,7 +34,7 @@ class Nav extends Component {
         </div>
         <br />
       </div>
-    );
+    )
   }
 }
 

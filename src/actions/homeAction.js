@@ -14,7 +14,6 @@ const receiveAllList = allList => ({
 })
 
 export const getAllList = () => dispatch => {
-
   fetchAllList().then(allList => {
     dispatch(receiveAllList(allList))
   })
@@ -35,7 +34,6 @@ const receiveLocations = locations => ({
 })
 
 export const getLocations = (filter) => dispatch => {
-
   fetchLocations(filter).then(locations => {
     dispatch(receiveLocations(locations))
   })
