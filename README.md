@@ -8,6 +8,7 @@
 - [Redux (State layer)](https://redux.js.org/)
 - [Foundation](https://foundation.zurb.com/)
 - [JavaScript Standard Style Guide](https://standardjs.com/)
+- [Heroku](https://www.heroku.com/)
 
 ---
 # HOW TO RUN
