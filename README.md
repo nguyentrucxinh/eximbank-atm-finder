@@ -4,18 +4,20 @@
 
 # STACK
 
-- React
-- Redux
-- Foundation (Responsive front-end framework)
+- [React (View layer)](https://reactjs.org/)
+- [Redux (State layer)](https://redux.js.org/)
+- [Foundation](https://foundation.zurb.com/)
 - [JavaScript Standard Style Guide](https://standardjs.com/)
 
 ---
 # HOW TO RUN
 
+- Run:
 ```bash
 npm start
 ```
 
+- Lint:
 ```bash
 npm run lint
 ```
